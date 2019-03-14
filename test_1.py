@@ -1,0 +1,26 @@
+import tkinter as tk
+window=tk.Tk()
+
+window.title('Gui')
+
+li=tk.Label(window,text="hello world",bg='red',fg='blue')
+#window.geometry('300*200')
+li.pack()
+lr=tk.Label(window,text='hi',bg='green',fg='red')
+lr.pack(fill='x')
+frame1=tk.Frame(window)
+frame1.pack()
+frame2=tk.Frame(window)
+frame2.pack(side ='bottom')
+
+button1=tk.Button(frame1,text='click',fg='red')
+button1.pack(side='left')
+button2=tk.Button(frame1,text='click',fg='green')
+button2.pack(side='left')
+button3=tk.Button(frame1,text='click',fg='blue')
+button3.pack(side='left')
+button4=tk.Button(frame2,text='click',fg='black')
+button4.pack(side='left')
+button5=tk.Button(frame2,text='click',fg='yellow')
+button5.pack(side='left')
+window.mainloop()
